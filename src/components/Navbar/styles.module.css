@@ -1,0 +1,94 @@
+.navbar{
+    height: 70px;
+    background-color:   rgb(214, 216, 209);
+    display: flex;
+    padding: 10px;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+ height: 80px;
+ width: 100px;
+}
+
+.menu{
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+}
+
+.menu li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.menu li a:hover{
+    color: rgb(71, 67, 67);
+   
+}
+
+.menuBurger{
+    height: 20px;
+    width: 20px;
+}
+
+.navButton{
+    display: flex;
+}
+
+.mobileMenuWrapper{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 110px);
+    background-color: antiquewhite;
+    transition: .3s;
+}
+
+.menuClosed{
+    right:900px
+}
+
+.menuOpen{
+    right:0px
+}
+
+
+.mobileMenu{
+display: flex;
+flex-direction: column;
+gap: 20px;
+list-style-type: none;
+}
+
+.mobileMenu li a{
+    text-decoration: none;
+    color: rgb(80, 112, 141);
+    font-weight: 500;
+}
+
+.mobileMenu li:hover{
+    background-color: rgb(229, 224, 215);
+    padding: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .menu{
+        display: none;
+    }
+
+  }
+
+  @media only screen and (min-width: 768px) {
+
+    .navButton{
+        display: none;
+    }
+
+    .mobileMenuWrapper{
+        display: none;
+    }
+  }
